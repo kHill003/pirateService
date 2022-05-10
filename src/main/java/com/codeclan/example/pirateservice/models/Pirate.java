@@ -1,3 +1,5 @@
+package com.codeclan.example.pirateservice.models;
+
 package Models;
 import javax.persistence.*;
 
@@ -47,7 +49,7 @@ public class Pirate
     }
 
     public String getLastName() {
-        return lastName;
+        return lastName; 
     }
 
     public void setLastName(String lastName) {
@@ -61,5 +63,6 @@ public class Pirate
     public void setAge(int age) {
         this.age = age;
     }
-    
+
 }
+
