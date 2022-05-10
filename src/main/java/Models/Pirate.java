@@ -9,6 +9,14 @@ public class Pirate
     @GeneratedValue(strategy = GenerationType.IDENTITY) // NEW
     @Column(name = "id") // NEW
     private Long id;
+    @Column(name = "first_name") // NEW
+    private String firstName;
+
+    @Column(name = "last_name") // NEW
+    private String lastName;
+
+    @Column(name = "age") // NEW
+    private int age;
     private String firstName;
     private String lastName;
     private int age;
