@@ -1,8 +1,14 @@
 package Models;
+import javax.persistence.*;
 
+@Entity // NEW
+@Table(name="pirates")
 public class Pirate
 {
-    private Long id; // NEW
+    @Id // NEW
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // NEW
+    @Column(name = "id") // NEW
+    private Long id;
     private String firstName;
     private String lastName;
     private int age;
