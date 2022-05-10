@@ -1,13 +1,7 @@
-// Pirate.java
-import javax.persistence.Entity; // NEW
-import javax.persistence.Table; // NEW
+package Models;
 
-@Entity // NEW
-@Table(name="pirates") // NEW
-
-
-public class Pirate {
-
+public class Pirate
+{
     private Long id; // NEW
     private String firstName;
     private String lastName;
@@ -53,5 +47,5 @@ public class Pirate {
     public void setAge(int age) {
         this.age = age;
     }
+    
 }
-
